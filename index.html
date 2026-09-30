@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Image Gallery</h1>
+            <p>Explore beautiful moments through images</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Category Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-category="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-category="travel">
+                Travel
+            </button>
+
+            <button class="filter-btn" data-category="architecture">
+                Architecture
+            </button>
+
+            <button class="filter-btn" data-category="animals">
+                Animals
+            </button>
+        </div>
+
+        <!-- Gallery -->
+        <section class="gallery">
+
+            <div class="gallery-item"
+                 data-category="nature"
+                 data-index="0">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                    alt="Mountain landscape"
+                >
+
+                <div class="image-overlay">
+                    <h3>Mountain Escape</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item"
+                 data-category="travel"
+                 data-index="1">
+
+                <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                    alt="Beach"
+                >
+
+                <div class="image-overlay">
+                    <h3>Tropical Beach</h3>
+                    <p>Travel</p>
+                </div>
+            </div>
+
+            <div class="gallery-item"
+                 data-category="architecture"
+                 data-index="2">
+
+                <img
+                    src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=80"
+                    alt="Modern building"
+                >
+
+                <div class="image-overlay">
+                    <h3>Modern Architecture</h3>
+                    <p>Architecture</p>
+                </div>
+            </div>
+
+            <div class="gallery-item"
+                 data-category="animals"
+                 data-index="3">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80"
+                    alt="Lion"
+                >
+
+                <div class="image-overlay">
+                    <h3>Wild Lion</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item"
+                 data-category="nature"
+                 data-index="4">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+                    alt="Forest"
+                >
+
+                <div class="image-overlay">
+                    <h3>Green Forest</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item"
+                 data-category="travel"
+                 data-index="5">
+
+                <img
+                    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
+                    alt="Travel landscape"
+                >
+
+                <div class="image-overlay">
+                    <h3>Adventure</h3>
+                    <p>Travel</p>
+                </div>
+            </div>
+
+            <div class="gallery-item"
+                 data-category="architecture"
+                 data-index="6">
+
+                <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+                    alt="Skyscraper"
+                >
+
+                <div class="image-overlay">
+                    <h3>City Tower</h3>
+                    <p>Architecture</p>
+                </div>
+            </div>
+
+            <div class="gallery-item"
+                 data-category="animals"
+                 data-index="7">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80"
+                    alt="Dog"
+                >
+
+                <div class="image-overlay">
+                    <h3>Happy Dog</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-btn" id="closeBtn">
+            &times;
+        </button>
+
+        <button class="nav-btn prev" id="prevBtn">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImage" src="" alt="">
+
+            <div class="lightbox-info">
+                <h2 id="lightboxTitle"></h2>
+                <p id="lightboxCategory"></p>
+                <span id="imageCounter"></span>
+            </div>
+
+        </div>
+
+        <button class="nav-btn next" id="nextBtn">
+            &#10095;
+        </button>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Modern Image Gallery</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
